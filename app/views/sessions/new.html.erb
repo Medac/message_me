@@ -1,28 +1,38 @@
-Login
+<h2 align="center">Welcome to MessageMe - a <em>complete Chat App</em></h2>
+<h4 class="ui center aligned medium icon header">
+  <i class="circular orange power off icon"></i>
+  Log in to continue
+</h4>
 
-<h1 align="center">Log in</h1>
-<%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
-  <div class="form-group">
-    <div class="control-label col-sm-2">
-      <%= f.label :email %>
+<div class="ui placeholder segment">
+  <div class="ui two column very relaxed stackable grid">
+    <div class="column">
+      <form class="ui form">
+        <div class="field">
+          <label>Username</label>
+          <div class="ui left icon input">
+            <input type="text" placeholder="Username">
+            <i class="user icon"></i>
+          </div>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <div class="ui left icon input">
+            <input type="password">
+            <i class="lock icon"></i>
+          </div>
+        </div>
+        <button class="ui orange submit button">Login</button>
+      </form>
     </div>
-    <div class="col-sm-8">
-      <%= f.email_field :email, class: 'form-control', placeholder: "Email", autofocus: true %>
+    <div class="middle aligned column">
+      <div class="ui big orange disabled button">
+        <i class="signup icon"></i>
+        Sign Up
+      </div>
     </div>
   </div>
-  <div class="form-group">
-    <div class="control-label col-sm-2">
-      <%= f.label :password %>
-    </div>
-    <div class="col-sm-8">
-      <%= f.password_field :password, class: 'form-control', placeholder: "Password", autocomplete: "off" %>
-    </div>
+  <div class="ui vertical divider">
+    Or
   </div>
-  <div class="form-group">
-    <div class=" col-sm-offset-2 col-sm-10">
-      <%= f.submit "Log in", class: 'btn btn-primary btn-lg' %>
-    </div>
-  </div>
-<% end %>
-<div class="col-xs-4 col-xs-offset-4">
 </div>
