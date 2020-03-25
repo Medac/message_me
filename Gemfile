@@ -42,7 +42,7 @@ gem 'hirb'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :production do 
-  gem 'puma', '~> 3.11'
+  gem 'puma'
   gem 'pg'
   gem 'rails_12factor'
   gem 'redis'
